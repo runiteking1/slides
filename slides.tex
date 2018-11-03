@@ -69,10 +69,38 @@
 
 \maketitle
 
-\section{Git}
+\section{Introduction to Git}
 \begin{frame}
-	\frametitle{What is Preconditioning}
+	\frametitle{Why should I care?}
 
+	\pause
+
+	Probably the best question one can ask in grad school. 
+	Some scenarios: \pause 
+	\begin{enumerate}
+		\item Graduate/drop-out and work in industry; probably involves coding because pure math is (practically) useless; \pause probably needs git. \pause
+		\item Graduate and work in government lab; probably involves coding; \pause probably needs git.\pause
+		\item Graduate and work in academia; might have to collaborate on code (?); \pause small probability needs git.\pause
+		\item Graduate and be a bum; do not need git. \pause 
+	\end{enumerate}
+	Think of it like learning \LaTeX: initial time investment for rewards later on. 
 \end{frame}
 
+\begin{frame}
+	\frametitle{What is Git?}
+	\begin{itemize}
+		\item Version control - ``system that records changes to a file or set of files over time so that you can recall specific versions later.'' \pause 
+		\item For us graduate students in APMA, it's a way of backing up (and keeping track of) three important things:  .tex files,  code,  and data. \pause
+	\end{itemize}
+	\textbf{``BUT MARSHALL YOU DUMMY, THERE IS DROPBOX FOR THIS STUFF!'}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Scenarios where Dropbox fails.}
+	\begin{enumerate}
+		\item ``Last week when I ran this code, it produced linear convergence, but now it only produces sub-linear stuff'' - Git stores snapshots of the entire project, and you can revert to it! You have to revert individual files in Dropbox. \pause
+		\item ``I wonder if this crazy idea will work... but I don't want to destroy what I had'' - You can create a \emph{branch} in Git which allows you to easily prototype, and allows you to merge your crazy idea. No corresponding feature in Dropbox. 
+		\item ``Ugh, I forgot what I did a week ago with this code!'' - You can label each snapshot in Git with a message saying what you did. 
+	\end{enumerate}
+\end{frame}
 \end{document}
